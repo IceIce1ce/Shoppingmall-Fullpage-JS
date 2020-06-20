@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Stories about Viet Anh chicken farm</title>
+    <link rel="stylesheet" href="style.css">
+    <!--fullpage.js-->
+    <link rel='stylesheet' href='https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.css'>
+    <!--fullpage.js-->
+    <script src="https://kit.fontawesome.com/303450ab0e.js" crossorigin="anonymous"></script>
+    <!--live search ajax-->
+    <script>
+        function showResult(str) {
+          if (str.length==0) {
+            document.getElementById("livesearch").innerHTML="";
+            document.getElementById("livesearch").style.border="0px";
+            return;
+          }
+          if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+          } else {  // code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+          }
+          xmlhttp.onreadystatechange=function() {
+            if (this.readyState==4 && this.status==200) {
+              document.getElementById("livesearch").innerHTML=this.responseText;
+              /*document.getElementById("livesearch").style.border="1px solid #A5ACB2";*/
+            }
+          }
+          xmlhttp.open("GET","livesearch.php?q="+str,true);
+          xmlhttp.send();
+        }
+    </script>
+    <!--live search ajax-->
+</head>
+<body>
+    <!--Preloader-->
+    <div id="preloader">
+        <div class="preload-content">
+            <div id="sonar-load"></div>
+        </div>
+    </div>
+    <!--Preloader-->
+
+    <!--live search ajax-->
+    <style>
+    input{
+        background: none;
+        color: white;
+        border: none;
+        font-weight: bold;
+    }
+
+    input:focus{ /*for chrome*/
+        outline: none;
+    }
+
+    @media only screen and (max-width: 767px){
+        .logo-area form{
+            margin-left: 35px;
+        }
+
+        .move-icon-search{
+            position: absolute;
+            top: 65px;
+            left: 16px;
+        }
+    }
+
+    .change-color-nav-item a:hover{
+        color: #2ee59d;
+    }
+    </style>
+    <!--live search ajax-->
+    <div class="mainMenu d-flex align-items-center justify-content-between" style="background-color: #111111;">
+        <!-- Close Icon -->
+        <div class="closeIcon">
+            <i class="ti-close" aria-hidden="true"></i>
+        </div>
+        <!-- Logo Area -->
+        <div class="logo-area">
+            <!--live search ajax-->
+            <form style="margin-top: 60px;">
+                <i class="fas fa-search move-icon-search" style="color: white; padding: 12px;"></i>
+                <input type="text" size="22" onkeyup="showResult(this.value)" placeholder="Search">
+                <div id="livesearch" style="width: 270px;"></div>
+            </form>
+            <!--live search ajax-->
+        </div>
+        <!-- Nav -->
+        <div class="sonarNav wow fadeInUp change-color-nav-item" data-wow-delay="1s">
+            <nav>
+                <ul>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html" style="font-weight: bold; font-size: 20px;">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold; font-size: 20px;">POST 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold; font-size: 20px;">POST 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold; font-size: 20px;">POST 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold; font-size: 20px;">POST 4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="font-weight: bold; font-size: 20px;">POST 5</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--addition logo social-->
+        <style>
+        .change-line-copywrite hr{
+            border-style: inset;
+            border-width: 1px;
+            color: white;
+            width: 270px;
+        }
+
+        @media only screen and (max-width: 767px){
+            .change-line-copywrite hr{
+                border-style: inset;
+                border-width: 1px;
+                color: white;
+                width: 230px;
+            }
+        }
+        </style>
+
+        <div class="move-addition-logo-social">
+            <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter fa-2x" style="margin-right: 25px; color: white; text-decoration: none;"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-2x" style="color: white; text-decoration: none;"></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x" style="margin-left: 25px; color: white; text-decoration: none;"></i></a>
+        </div>
+        <!--addition logo social-->
+
+        <!-- Copwrite Text -->
+        <div class="copywrite-text change-line-copywrite">
+            <hr>
+            <p><a href="term-of-use.html" target="_blank" style="color: #868686; font-size: 11px; text-decoration: none; outline: none;">Terms & Conditions</a></p>
+            <p><a href="privacy-policy.html" target="_blank" style="color: #868686; font-size: 11px; text-decoration: none; outline: none;">Privacy Policy</a></p>
+        </div>
+    </div>
+
+    <header class="header-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="menu-area d-flex justify-content-between">
+                        <!-- Logo Area  -->
+                        <div class="logo-area">
+                            <a href="index.html" style="font-weight: 400;">Our Stories</a>
+                        </div>
+
+                        <div class="menu-content-area d-flex align-items-center">
+                            <!-- Menu Icon -->
+                            <span class="navbar-toggler-icon" id="menuIcon"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--add video-->
+    <style>
+    video{
+        left: 50%;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .footer{
+        position: relative; 
+        top: 18px;
+        left: 30px;
+        padding: 8px;
+    }
+
+    .myContent{
+          height: 84px; 
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          background-color: #222222;
+    }
+    
+    .terms-conditions{
+        text-align: right;
+        position: absolute;
+        top: 8px;
+        right: 155px;
+    }
+
+    .policy{
+        text-align: right;
+        position: absolute;
+        top: 8px;
+        right: 75px;
+    }
+
+    .text-hero{
+        color: #fff;
+        font-size: 3rem;
+        position: absolute;
+        text-transform: uppercase;
+        width: 100%;
+        z-index: 1;
+        margin-top: -200px;
+        margin-left: 400px;
+        font-weight: bold;
+        /*prevent flicker on some browsers*/
+        -webkit-transform: translate3d(0,0,0);
+		-ms-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+        /*prevent flicker on some browsers*/
+    }
+
+    @media only screen and (max-width: 440px){
+        .fit-for-mobile1{
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .fit-for-mobile2{
+            position: absolute;
+            top: 40px;
+            right: -100px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .footer i{
+            position: relative; 
+            top: -6px;
+            left: -15px;
+        }
+
+        .myContent{
+          height: 105px; 
+          position: absolute;
+          bottom: 0px;
+          width: 100%;
+          background-color: #222222;
+        }
+    }
+
+    .watch-btn{
+        width: 140px;
+        height: 42px;
+        font-size: 12px;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: black;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        margin-left: 400px;
+        margin-top: -100px; 
+        z-index: 1;
+    }
+
+    .watch-btn:hover{
+        background-color: #2EE59D;
+        color: #fff;
+        transform: translateY(-7px);
+    }
+
+    .watch-btn1{
+        width: 170px;
+        height: 42px;
+        font-size: 12px;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: black;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        position: absolute;
+        margin-left: 400px;
+        margin-top: -100px;
+        z-index: 1;
+    }
+
+    .watch-btn1:hover{
+        background-color: #2EE59D;
+        color: #fff;
+        transform: translateY(-7px);
+    }
+
+    @media only screen and (max-width: 1370px){
+        .text-hero{
+            color: #fff;
+            font-size: 3rem;
+            position: absolute;
+            text-transform: uppercase;
+            width: 100%;
+            z-index: 1;
+            margin-top: -200px;
+            margin-left: 100px;
+            font-weight: bold;
+            /*prevent flicker on some browsers*/
+            -webkit-transform: translate3d(0,0,0);
+		    -ms-transform: translate3d(0,0,0);
+		    transform: translate3d(0,0,0);
+            /*prevent flicker on some browsers*/
+        }
+
+        .watch-btn{
+            width: 140px;
+            height: 42px;
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: black;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: -100px; 
+            z-index: 1;
+        }
+
+        .watch-btn1{
+            width: 170px;
+            height: 42px;
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: black;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            position: absolute;
+            margin-left: 100px;
+            margin-top: -100px;
+            z-index: 1;
+        }
+    }
+
+    @media only screen and (max-width: 875px){
+        .optimize-text-hero{
+            color: #fff;
+            font-size: 2.5rem;
+            position: absolute;
+            text-transform: uppercase;
+            width: 88%;
+            z-index: 1;
+            margin-top: -200px;
+            margin-left: 25px;
+            font-weight: bold;
+            /*prevent flicker on some browsers*/
+            -webkit-transform: translate3d(0,0,0);
+		    -ms-transform: translate3d(0,0,0);
+		    transform: translate3d(0,0,0);
+            /*prevent flicker on some browsers*/
+        }
+
+        .optimize-watch-btn{
+            width: 140px;
+            height: 42px;
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: black;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            position: absolute;
+            margin-left: 25px;
+            margin-top: -80px; 
+            z-index: 1;
+        }
+
+        .optimize-watch-btn1{
+            width: 170px;
+            height: 42px;
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            font-weight: 500;
+            color: black;
+            background-color: #fff;
+            border: none;
+            border-radius: 45px;
+            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease 0s;
+            cursor: pointer;
+            outline: none;
+            position: absolute;
+            margin-left: 25px;
+            margin-top: -80px;
+            z-index: 1;
+        }
+    }
+
+    /*grayscale video*/
+    body section.active video{
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        opacity: 1;
+        /*addition for video(default: no body)*/
+        -webkit-transition: all .2s ease;
+        transition: all .2s ease;
+    }
+    
+    video{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        /*use background-color for direct link video and fill the video if video not display full*/
+        /*background-color: black;*/
+    }
+    /*addition for video*/
+    body #fullpage video::-webkit-media-controls{
+        display: none !important;
+    }
+
+    #fullpage .fullpage--moz video {
+        -webkit-filter: unset;
+        filter: unset;
+    }
+    /*addition for video*/
+    /*grayscale video*/
+
+    /*.mesh-bg {
+        background-color: rgba(0, 0, 0, 0.3);
+        height: 367%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }*/
+
+    /*normal scroll hamburger*/
+    .mainMenu{
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    /*normal scroll hamburger*/
+    </style>
+    <!--should use lazy loading video for better loading page-->
+    <div id="fullpage">
+        <!-- use for reducing light of video
+        <div class="mesh-bg"></div>
+        -->
+
+        <section class="section">
+            <h2 class="text-hero optimize-text-hero">Write your content 1 here</h2>
+            <button class="watch-btn optimize-watch-btn" onclick="window.location.href = 'index.html';">Watch</button>
+            <video loop muted data-autoplay playsinline preload="auto">
+                <source src="https://res.cloudinary.com/dwbfhtj8x/video/upload/v1585560595/trailer1_ngxx5u.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="section" style="margin-top: -80px;">
+            <h2 class="text-hero optimize-text-hero">Write your content 2 here</h2>
+            <button class="watch-btn1 optimize-watch-btn1" onclick="window.location.href = 'index.html';">See All Stories</button>
+            <video loop muted data-autoplay playsinline preload="auto">
+                <source src="https://res.cloudinary.com/dwbfhtj8x/video/upload/v1585560758/trailer2_j0rb4m.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="section" style="margin-top: -80px;">
+            <h2 class="text-hero optimize-text-hero">Write your content 3 here</h2>
+            <button class="watch-btn1 optimize-watch-btn1" onclick="window.location.href = 'index.html';">See All Stories</button>
+            <video loop muted data-autoplay playsinline preload="auto">
+                <source src="https://res.cloudinary.com/dwbfhtj8x/video/upload/v1585560994/trailer3_h2g0uo.mp4" type="video/mp4">
+            </video>
+        </section>
+    
+        <section class="section" style="margin-top: -80px;">
+            <h2 class="text-hero optimize-text-hero">Write your content 4 here</h2>
+            <button class="watch-btn1 optimize-watch-btn1" onclick="window.location.href = 'index.html';">See All Stories</button>
+            <video loop muted data-autoplay playsinline preload="auto">
+                <source src="https://res.cloudinary.com/dwbfhtj8x/video/upload/v1585560946/trailer4_dsyukn.mp4" type="video/mp4">
+            </video>
+            <!--footer-->
+            <div class="myContent" style="z-index: 1;">
+                <div class="footer">  
+                    <a href="https://twitter.com/home" target="_blank"><i class="fab fa-twitter fa-2x" style="color: white; text-decoration: none"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" style="margin-left: 15px;"><i class="fab fa-instagram fa-2x" style="color: white; text-decoration: none;"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank" style="margin-left: 15px;"><i class="fab fa-facebook fa-2x" style="color: white; text-decoration: none;"></i></a>
+                    <p class="terms-conditions fit-for-mobile1"><a href="term-of-use.html" target="_blank" style="color: #868686; font-size: 11px; text-decoration: none; outline: none;">Terms & Conditions</a></p>
+                    <p class="policy fit-for-mobile2"><a href="privacy-policy.html" target="_blank" style="color: #868686; font-size: 11px; text-decoration: none; outline: none;">Privacy Policy</a></p>
+                </div>
+            </div>
+            <!--footer-->
+        </section>
+    </div>
+    <!--add video-->
+    
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!--
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins.js"></script>
+    -->
+    <script src="js/active.js"></script>
+
+    <!--fullpage.js-->
+    <script src='https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js'></script>
+    <script>
+        new fullpage('#fullpage', {
+            anchors: ['content1', 'content2', 'content3', 'content4'],
+            scrollingSpeed: 750,
+            fitToSectionDelay: 750,
+            normalScrollElements: '.mainMenu'
+    });
+    </script>
+    <!--fullpage.js-->
+</body>
+</html>
